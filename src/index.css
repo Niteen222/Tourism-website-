@@ -1,15 +1,18 @@
 :root {
   /* Colors */
-  --primary: #FF5A5F;     /* Vibrant Coral Pink */
+  --primary: #FF5A5F;
+  /* Vibrant Coral Pink */
   --primary-dark: #E0484D;
-  --secondary: #00A699;   /* Teal */
-  --accent: #FC642D;      /* Orange */
-  
+  --secondary: #00A699;
+  /* Teal */
+  --accent: #FC642D;
+  /* Orange */
+
   --bg-color: #F7F7F9;
   --bg-card: #FFFFFF;
   --text-dark: #222222;
   --text-light: #717171;
-  
+
   --success: #10B981;
   --warning: #F59E0B;
 
@@ -18,16 +21,16 @@
   --font-body: 'Inter', sans-serif;
 
   /* Shadows */
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
-  
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
   /* Radii */
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 20px;
   --radius-full: 9999px;
-  
+
   /* Transitions */
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -46,7 +49,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   color: var(--text-dark);
@@ -164,8 +172,15 @@ button {
 
 /* Micro-animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
@@ -174,8 +189,13 @@ button {
 
 /* Marquee infinite scroll left to right */
 @keyframes scrollLeft {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); } 
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .marquee-container {
@@ -194,4 +214,72 @@ button {
 /* Optional hover pause */
 .marquee-container:hover .marquee-content {
   animation-play-state: paused;
+}
+
+/* --- Responsive Styles --- */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.desktop-links {
+  display: flex;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 16px 24px;
+  background-color: var(--bg-card);
+  border-bottom: 1px solid #E5E7EB;
+  box-shadow: var(--shadow-sm);
+  gap: 16px;
+}
+
+.mobile-menu a,
+.mobile-menu button {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mobile-menu a:last-child,
+.mobile-menu button:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-links {
+    display: none !important;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+
+  /* Adjust hero typography for mobile */
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  /* Footer adjustments */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .footer-grid>div {
+    margin: 0 auto;
+  }
 }
