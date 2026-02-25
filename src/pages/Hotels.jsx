@@ -10,7 +10,7 @@ const HOTELS_DATA = [
         type: "Premium Resort",
         price: "₹3,500/night",
         rating: 4.8,
-        image: "https://placehold.co/800x600/10B981/white?text=Resort",
+        image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80",
         features: ["AC Rooms", "Local Food Hub", "Jungle Safari Access"]
     },
     {
@@ -19,7 +19,7 @@ const HOTELS_DATA = [
         type: "Authentic Homestay",
         price: "₹1,200/night",
         rating: 4.9,
-        image: "https://placehold.co/800x600/F59E0B/white?text=Homestay",
+        image: "https://images.unsplash.com/photo-1505691938895-1758d7def515?auto=format&fit=crop&w=800&q=80",
         features: ["Home Cooked Meals", "Cultural Experience", "Trekking Guide"]
     },
     {
@@ -28,7 +28,7 @@ const HOTELS_DATA = [
         type: "Budget Hotel",
         price: "₹800/night",
         rating: 4.2,
-        image: "https://placehold.co/800x600/2563EB/white?text=Lodge",
+        image: "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=800&q=80",
         features: ["Near Bus Stand", "Free WiFi", "Clean Rooms"]
     }
 ];

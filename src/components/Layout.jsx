@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
 import { MapPin, User, LogOut, Menu, X } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { Chatbot } from './Chatbot';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -193,6 +194,7 @@ export const Layout = () => {
         <Outlet />
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 };

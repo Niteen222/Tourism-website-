@@ -4,10 +4,10 @@ import { Search, MapPin, Coffee, Car, Home as HomeIcon, User } from 'lucide-reac
 
 // Mock Data for Marquee
 const FEATURED_PLACES = [
-    { id: 1, name: "Dholkal Ganesha", type: "Trek & Temple", image: "https://placehold.co/800x600/FF5A5F/white?text=Dholkal+Ganesha" },
-    { id: 2, name: "Danteshwari Temple", type: "Heritage", image: "https://placehold.co/800x600/00A699/white?text=Danteshwari+Temple" },
-    { id: 3, name: "Phoolpad Waterfall", type: "Nature", image: "https://placehold.co/800x600/FC642D/white?text=Phoolpad+Waterfall" },
-    { id: 4, name: "Barsoor", type: "Historical Site", image: "https://placehold.co/800x600/222222/white?text=Barsoor" }
+    { id: 1, name: "Dholkal Ganesha", type: "Trek & Temple", image: "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=400&q=80" },
+    { id: 2, name: "Danteshwari Temple", type: "Heritage", image: "https://images.unsplash.com/photo-1600021381393-272eabd32ee0?auto=format&fit=crop&w=400&q=80" },
+    { id: 3, name: "Phoolpad Waterfall", type: "Nature", image: "https://images.unsplash.com/photo-1432405972618-c600f44bc912?auto=format&fit=crop&w=400&q=80" },
+    { id: 4, name: "Barsoor", type: "Historical Site", image: "https://images.unsplash.com/photo-1549605659-dc6198f6d333?auto=format&fit=crop&w=400&q=80" }
 ];
 
 export const Home = () => {

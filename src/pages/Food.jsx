@@ -5,21 +5,21 @@ const FOOD_DATA = [
         id: 1,
         name: "Chaprah (Red Ant Chutney)",
         description: "A famous and unique Bastar delicacy made from red ants and their eggs, ground with spices. Known for its medicinal properties.",
-        image: "https://placehold.co/800x600/FC642D/white?text=Red+Ant+Chutney",
+        image: "https://images.unsplash.com/photo-1589302168068-964664d93cb0?auto=format&fit=crop&w=800&q=80",
         origin: "Traditional Tribal Food"
     },
     {
         id: 2,
         name: "Bafauri",
         description: "A healthy, steamed alternative to pakodas made from chana dal, onions, and spices. Very popular in Chhattisgarh.",
-        image: "https://placehold.co/800x600/FF5A5F/white?text=Bafauri",
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
         origin: "Local Snack"
     },
     {
         id: 3,
         name: "Muthia",
         description: "Steamed dumplings made from rice batter and local spices. Often served during breakfast with tangy tomato chutney.",
-        image: "https://placehold.co/800x600/00A699/white?text=Muthia",
+        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
         origin: "Breakfast Item"
     }
 ];
