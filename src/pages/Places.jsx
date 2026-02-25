@@ -14,7 +14,6 @@ const PLACES_DATA = [
         gallery: [
             "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1518182170546-076616fd427d?auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80"
         ]
@@ -23,13 +22,12 @@ const PLACES_DATA = [
         id: 2,
         name: "Danteshwari Temple",
         description: "Built in the 14th century, this temple is dedicated to Goddess Danteshwari, the presiding deity of Bastar. It is one of the 52 Shakti Peethas.",
-        image: "https://images.unsplash.com/photo-1600021381393-272eabd32ee0?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1627884814981-2292023cb20c?auto=format&fit=crop&w=800&q=80",
         distance: "In Dantewada city",
         duration: "1-2 hours",
         gallery: [
-            "https://images.unsplash.com/photo-1600021381393-272eabd32ee0?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1627884814981-2292023cb20c?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1583339598273-0de2c1b9bfca?auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&w=800&q=80"
         ]
@@ -53,11 +51,11 @@ const PLACES_DATA = [
         id: 4,
         name: "Barsoor",
         description: "An ancient city known as the city of temples and lakes, famous for the Mama-Bhanja temple, Chandraditya temple, and twin Ganesha idols.",
-        image: "https://images.unsplash.com/photo-1549605659-dc6198f6d333?auto=format&fit=crop&w=800&q=80",
+        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
         distance: "30 km from Dantewada",
         duration: "Half day trip",
         gallery: [
-            "https://images.unsplash.com/photo-1549605659-dc6198f6d333?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1572074360670-65ee3bc3d67f?auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1585671175647-75fd54c330df?auto=format&fit=crop&w=800&q=80",
             "https://images.unsplash.com/photo-1583802996963-c7e1e6267fce?auto=format&fit=crop&w=800&q=80",
