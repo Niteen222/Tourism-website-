@@ -1,24 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, MapPin, Coffee, Car, Home as HomeIcon, User, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 // Reliable generic High-Quality Unsplash images for Bastar / Nature / Heritage feel
-const FEATURED_PLACES = [
-    { id: 1, name: "Dholkal Ganesha", type: "Trek & Temple", image: "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=800&q=80" },
-    { id: 2, name: "Danteshwari Temple", type: "Heritage", image: "https://images.unsplash.com/photo-1627884814981-2292023cb20c?auto=format&fit=crop&w=800&q=80" },
-    { id: 3, name: "Phoolpad Waterfall", type: "Nature", image: "https://images.unsplash.com/photo-1432405972618-c600f44bc912?auto=format&fit=crop&w=800&q=80" },
-    { id: 4, name: "Barsoor", type: "Historical Site", image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80" }
-];
 
 const HERO_IMAGES = [
     "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=1600&q=80", // Nature/Mountains
-    "https://images.unsplash.com/photo-1627884814981-2292023cb20c?auto=format&fit=crop&w=1600&q=80", // Temple architecture
-    "https://images.unsplash.com/photo-1432405972618-c600f44bc912?auto=format&fit=crop&w=1600&q=80", // Waterfall
-    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80", // Resort
-    "https://images.unsplash.com/photo-1589302168068-964664d93cb0?auto=format&fit=crop&w=1600&q=80"  // Tribal Food/Culture
+    "https://maadanteshwari.in/assets/img/slider/slider-0004.jpg", // Temple architecture
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ29mx_nY44tJd6ic41qVUpxGnqEXr968XZSw&s", // Waterfall
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_xZ0oUGncT3GiJCUm9LdiuXSzPJ77saayqA&s", // Resort
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFUivDwvJT7wgePWtubsS9FE6fgqS4mrq6pg&s"  // Tribal Food/Culture
 ];
 
 export const Home = () => {
+    const { t } = useLanguage();
     const [currentSlide, setCurrentSlide] = useState(0);
 
     // Auto-play carousel
@@ -109,7 +105,7 @@ export const Home = () => {
                             fontFamily: 'var(--font-heading)',
                             textShadow: '0 4px 20px rgba(0,0,0,0.5)'
                         }}>
-                            Discover the Heart of <br /> <span style={{ color: '#FFE0E0' }}>Bastar, Dantewada</span>
+                            {t('hero.title')} <br /> <span style={{ color: '#FFE0E0' }}>{t('navbar.dantewada')}</span>
                         </h1>
                         <p style={{
                             fontSize: '1.25rem',
@@ -119,7 +115,7 @@ export const Home = () => {
                             margin: '0 auto 40px auto',
                             textShadow: '0 2px 10px rgba(0,0,0,0.5)'
                         }}>
-                            Connect with local guides, find authentic food, book cozy homestays, and explore untouched nature.
+                            {t('hero.subtitle')}
                         </p>
 
                         {/* Quick Search/Actions Glass Morphism Bar */}
@@ -129,22 +125,22 @@ export const Home = () => {
                             borderRadius: 'var(--radius-full)',
                             gap: '12px',
                             flexWrap: 'wrap',
-                            justifyContent: 'center',
+                            justifyContent: 'space-around',
                             boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
                             backgroundColor: 'rgba(255, 255, 255, 0.15)',
                             backdropFilter: 'blur(12px)'
                         }}>
-                            <Link to="/guides" className="btn" style={{ background: 'white', color: 'var(--primary)', borderRadius: 'var(--radius-full)' }}>
-                                <User size={18} /> Find a Guide
+                            <Link to="/guides" className="btn" style={{ background: 'var(--bg-card)', color: 'var(--primary)', borderRadius: 'var(--radius-full)' }}>
+                                <User size={18} /> {t('hero.findGuide')}
                             </Link>
-                            <Link to="/hotels" className="btn" style={{ background: 'white', color: 'var(--primary)', borderRadius: 'var(--radius-full)' }}>
-                                <HomeIcon size={18} /> Stay
+                            <Link to="/hotels" className="btn" style={{ background: 'var(--bg-card)', color: 'var(--primary)', borderRadius: 'var(--radius-full)' }}>
+                                <HomeIcon size={18} /> {t('hero.stay')}
                             </Link>
-                            <Link to="/taxis" className="btn" style={{ background: 'white', color: 'var(--primary)', borderRadius: 'var(--radius-full)' }}>
-                                <Car size={18} /> Cab
+                            <Link to="/taxis" className="btn" style={{ background: 'var(--bg-card)', color: 'var(--primary)', borderRadius: 'var(--radius-full)' }}>
+                                <Car size={18} /> {t('hero.cab')}
                             </Link>
-                            <Link to="/food" className="btn" style={{ background: 'white', color: 'var(--primary)', borderRadius: 'var(--radius-full)' }}>
-                                <Coffee size={18} /> Food
+                            <Link to="/food" className="btn" style={{ background: 'var(--bg-card)', color: 'var(--primary)', borderRadius: 'var(--radius-full)' }}>
+                                <Coffee size={18} /> {t('hero.food')}
                             </Link>
                         </div>
                     </div>
@@ -171,13 +167,13 @@ export const Home = () => {
             {/* Scrolling Marquee Section */}
             <section style={{ padding: '60px 0', backgroundColor: 'var(--bg-color)', overflow: 'hidden' }}>
                 <div className="container" style={{ marginBottom: '32px' }}>
-                    <h2>Must Visit Places</h2>
+                    <h2>{t('home.mustVisit')}</h2>
                 </div>
 
                 <div className="marquee-container">
                     <div className="marquee-content">
                         {/* Double the list for seamless infinite scroll */}
-                        {[...FEATURED_PLACES, ...FEATURED_PLACES].map((place, index) => (
+                        {[...t('places.data'), ...t('places.data')].map((place, index) => (
                             <div key={`${place.id}-${index}`} className="card" style={{
                                 width: '300px',
                                 height: '400px',
@@ -212,33 +208,33 @@ export const Home = () => {
             </section>
 
             {/* How it Works Section */}
-            <section style={{ padding: '80px 0', backgroundColor: 'white' }}>
+            <section style={{ padding: '80px 0', backgroundColor: 'var(--bg-card)' }}>
                 <div className="container">
-                    <h2 style={{ textAlign: 'center', marginBottom: '48px', fontSize: '2.5rem' }}>How It Works</h2>
+                    <h2 style={{ textAlign: 'center', marginBottom: '48px', fontSize: '2.5rem' }}>{t('home.howItWorks')}</h2>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px' }}>
 
                         <div className="card" style={{ padding: '32px', textAlign: 'center' }}>
                             <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: 'rgba(255, 90, 95, 0.1)', color: 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px auto' }}>
                                 <User size={32} />
                             </div>
-                            <h3 style={{ marginBottom: '16px' }}>1. Sign Up</h3>
-                            <p style={{ color: 'var(--text-light)' }}>Create an account as a Tourist or a Local Guide to start your journey.</p>
+                            <h3 style={{ marginBottom: '16px' }}>{t('home.step1Title')}</h3>
+                            <p style={{ color: 'var(--text-light)' }}>{t('home.step1Desc')}</p>
                         </div>
 
                         <div className="card" style={{ padding: '32px', textAlign: 'center' }}>
                             <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: 'rgba(0, 166, 153, 0.1)', color: 'var(--secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px auto' }}>
                                 <Search size={32} />
                             </div>
-                            <h3 style={{ marginBottom: '16px' }}>2. Explore & Book</h3>
-                            <p style={{ color: 'var(--text-light)' }}>Find the perfect homestay, affordable taxi, or local companion for your trip.</p>
+                            <h3 style={{ marginBottom: '16px' }}>{t('home.step2Title')}</h3>
+                            <p style={{ color: 'var(--text-light)' }}>{t('home.step2Desc')}</p>
                         </div>
 
                         <div className="card" style={{ padding: '32px', textAlign: 'center' }}>
                             <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: 'rgba(252, 100, 45, 0.1)', color: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px auto' }}>
                                 <MapPin size={32} />
                             </div>
-                            <h3 style={{ marginBottom: '16px' }}>3. Travel Seamlessly</h3>
-                            <p style={{ color: 'var(--text-light)' }}>Instant notifications sent to drivers and hosts via SMS & WhatsApp so you can travel stress-free.</p>
+                            <h3 style={{ marginBottom: '16px' }}>{t('home.step3Title')}</h3>
+                            <p style={{ color: 'var(--text-light)' }}>{t('home.step3Desc')}</p>
                         </div>
 
                     </div>

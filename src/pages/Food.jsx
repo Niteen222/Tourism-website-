@@ -1,42 +1,22 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
-const FOOD_DATA = [
-    {
-        id: 1,
-        name: "Chaprah (Red Ant Chutney)",
-        description: "A famous and unique Bastar delicacy made from red ants and their eggs, ground with spices. Known for its medicinal properties.",
-        image: "https://images.unsplash.com/photo-1589302168068-964664d93cb0?auto=format&fit=crop&w=800&q=80",
-        origin: "Traditional Tribal Food"
-    },
-    {
-        id: 2,
-        name: "Bafauri",
-        description: "A healthy, steamed alternative to pakodas made from chana dal, onions, and spices. Very popular in Chhattisgarh.",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
-        origin: "Local Snack"
-    },
-    {
-        id: 3,
-        name: "Muthia",
-        description: "Steamed dumplings made from rice batter and local spices. Often served during breakfast with tangy tomato chutney.",
-        image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
-        origin: "Breakfast Item"
-    }
-];
+
 
 export const Food = () => {
+    const { t } = useLanguage();
     return (
         <div className="animate-fade-in" style={{ padding: '60px 0', backgroundColor: 'var(--bg-color)', minHeight: '80vh' }}>
             <div className="container">
                 <div style={{ marginBottom: '48px', textAlign: 'center' }}>
-                    <h1 style={{ fontSize: '3rem', marginBottom: '16px' }}>Taste of Dantewada</h1>
+                    <h1 style={{ fontSize: '3rem', marginBottom: '16px' }}>{t('food.title')}</h1>
                     <p style={{ color: 'var(--text-light)', fontSize: '1.25rem', maxWidth: '600px', margin: '0 auto' }}>
-                        Explore the unique and traditional culinary heritage of the Bastar region.
+                        {t('food.subtitle')}
                     </p>
                 </div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '32px' }}>
-                    {FOOD_DATA.map(food => (
+                    {t('food.data').map(food => (
                         <div key={food.id} className="card" style={{ display: 'flex', flexDirection: 'column' }}>
                             <div style={{ height: '240px' }}>
                                 <img

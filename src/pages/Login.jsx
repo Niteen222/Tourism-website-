@@ -25,12 +25,7 @@ export const Login = () => {
             backgroundColor: 'var(--bg-color)',
             padding: '40px 24px'
         }}>
-            <div className="card animate-fade-in" style={{
-                maxWidth: '480px',
-                width: '100%',
-                padding: '40px',
-                backgroundColor: 'var(--bg-card)'
-            }}>
+            <div className="card auth-card animate-fade-in" style={{ maxWidth: '480px' }}>
                 <div style={{ textAlign: 'center', marginBottom: '32px' }}>
                     <div style={{
                         display: 'inline-flex',

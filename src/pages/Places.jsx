@@ -2,70 +2,13 @@ import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { MapPin, Clock, Navigation, X, Image as ImageIcon } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
-const PLACES_DATA = [
-    {
-        id: 1,
-        name: "Dholkal Ganesha",
-        description: "An ancient Ganesha idol situated at a height of 3000 feet amidst lush green forests. It requires a 3km trek through dense jungle.",
-        image: "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=800&q=80",
-        distance: "18 km from Dantewada city",
-        duration: "4-5 hours (including trek)",
-        gallery: [
-            "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1518182170546-076616fd427d?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80"
-        ]
-    },
-    {
-        id: 2,
-        name: "Danteshwari Temple",
-        description: "Built in the 14th century, this temple is dedicated to Goddess Danteshwari, the presiding deity of Bastar. It is one of the 52 Shakti Peethas.",
-        image: "https://images.unsplash.com/photo-1627884814981-2292023cb20c?auto=format&fit=crop&w=800&q=80",
-        distance: "In Dantewada city",
-        duration: "1-2 hours",
-        gallery: [
-            "https://images.unsplash.com/photo-1627884814981-2292023cb20c?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1583339598273-0de2c1b9bfca?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&w=800&q=80"
-        ]
-    },
-    {
-        id: 3,
-        name: "Phoolpad Waterfall",
-        description: "A breathtaking waterfall hidden deep inside the jungle, perfect for nature lovers and adventurers seeking untouched beauty.",
-        image: "https://images.unsplash.com/photo-1432405972618-c600f44bc912?auto=format&fit=crop&w=800&q=80",
-        distance: "35 km from Dantewada",
-        duration: "Half day trip",
-        gallery: [
-            "https://images.unsplash.com/photo-1432405972618-c600f44bc912?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1500634245200-e5245c7574ef?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1476611317561-60117649dd94?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1515444744559-7be63e160a22?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1465228517242-d61cc7a4a45a?auto=format&fit=crop&w=800&q=80"
-        ]
-    },
-    {
-        id: 4,
-        name: "Barsoor",
-        description: "An ancient city known as the city of temples and lakes, famous for the Mama-Bhanja temple, Chandraditya temple, and twin Ganesha idols.",
-        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
-        distance: "30 km from Dantewada",
-        duration: "Half day trip",
-        gallery: [
-            "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1572074360670-65ee3bc3d67f?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1585671175647-75fd54c330df?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1583802996963-c7e1e6267fce?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1591870196238-d7b88ec7b084?auto=format&fit=crop&w=800&q=80"
-        ]
-    }
-];
+
 
 export const Places = () => {
     const { user } = useAuth();
+    const { t } = useLanguage();
     const navigate = useNavigate();
     const [selectedPlace, setSelectedPlace] = useState(null);
 
@@ -81,9 +24,9 @@ export const Places = () => {
         <div style={{ padding: '40px 0', minHeight: '80vh' }}>
             {/* Header Content */}
             <div className="container" style={{ marginBottom: '48px', textAlign: 'center' }}>
-                <h1 style={{ fontSize: '2.5rem', marginBottom: '16px' }}>Must Visit Places</h1>
+                <h1 style={{ fontSize: '2.5rem', marginBottom: '16px' }}>{t('places.title')}</h1>
                 <p style={{ color: 'var(--text-light)', maxWidth: '600px', margin: '0 auto', fontSize: '1.125rem' }}>
-                    Discover the raw beauty, ancient temples, and hidden waterfalls of Dantewada.
+                    {t('places.subtitle')}
                 </p>
             </div>
 
@@ -93,7 +36,7 @@ export const Places = () => {
                 gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
                 gap: '32px'
             }}>
-                {PLACES_DATA.map(place => (
+                {t('places.data').map(place => (
                     <div key={place.id} className="card animate-fade-in" style={{ display: 'flex', flexDirection: 'column' }}>
                         {/* Image */}
                         <div style={{ height: '240px', overflow: 'hidden', position: 'relative' }}>
@@ -135,14 +78,14 @@ export const Places = () => {
                                     className="btn btn-outline"
                                     style={{ flex: 1, padding: '12px' }}
                                 >
-                                    <ImageIcon size={18} /> More About
+                                    <ImageIcon size={18} /> {t('places.moreAbout')}
                                 </button>
                                 <button
                                     onClick={() => handleNavigateWithAuth('/taxis')}
                                     className="btn btn-primary"
                                     style={{ flex: 1, padding: '12px' }}
                                 >
-                                    <Navigation size={18} /> Book Cab
+                                    <Navigation size={18} /> {t('places.bookCab')}
                                 </button>
                             </div>
                         </div>

@@ -36,12 +36,7 @@ export const Signup = () => {
             backgroundColor: 'var(--bg-color)',
             padding: '40px 24px'
         }}>
-            <div className="card animate-fade-in" style={{
-                maxWidth: '560px',
-                width: '100%',
-                padding: '40px',
-                backgroundColor: 'var(--bg-card)'
-            }}>
+            <div className="card auth-card animate-fade-in">
                 <div style={{ textAlign: 'center', marginBottom: '32px' }}>
                     <h1 style={{ fontSize: '2rem', marginBottom: '8px' }}>Create an Account</h1>
                     <p style={{ color: 'var(--text-light)' }}>Join our community to explore or host in Dantewada</p>
@@ -50,19 +45,10 @@ export const Signup = () => {
                 {/* Role Selector */}
                 {!showOtp ? (
                     <>
-                        <div style={{ display: 'flex', gap: '16px', marginBottom: '32px' }}>
+                        <div className="grid-responsive" style={{ marginBottom: '32px' }}>
                             <div
                                 onClick={() => setRole('tourist')}
-                                style={{
-                                    flex: 1,
-                                    padding: '24px',
-                                    border: `2px solid ${role === 'tourist' ? 'var(--primary)' : '#E5E7EB'}`,
-                                    borderRadius: 'var(--radius-md)',
-                                    cursor: 'pointer',
-                                    textAlign: 'center',
-                                    backgroundColor: role === 'tourist' ? 'rgba(255, 90, 95, 0.05)' : 'white',
-                                    transition: 'var(--transition)'
-                                }}
+                                className={`role-card ${role === 'tourist' ? 'active-tourist' : ''}`}
                             >
                                 <Navigation size={32} color={role === 'tourist' ? 'var(--primary)' : 'var(--text-light)'} style={{ margin: '0 auto 16px auto' }} />
                                 <h3 style={{ fontSize: '1.25rem', color: role === 'tourist' ? 'var(--primary)' : 'var(--text-dark)' }}>I'm a Traveller</h3>
@@ -71,16 +57,7 @@ export const Signup = () => {
 
                             <div
                                 onClick={() => setRole('local')}
-                                style={{
-                                    flex: 1,
-                                    padding: '24px',
-                                    border: `2px solid ${role === 'local' ? 'var(--secondary)' : '#E5E7EB'}`,
-                                    borderRadius: 'var(--radius-md)',
-                                    cursor: 'pointer',
-                                    textAlign: 'center',
-                                    backgroundColor: role === 'local' ? 'rgba(0, 166, 153, 0.05)' : 'white',
-                                    transition: 'var(--transition)'
-                                }}
+                                className={`role-card ${role === 'local' ? 'active-local' : ''}`}
                             >
                                 <User size={32} color={role === 'local' ? 'var(--secondary)' : 'var(--text-light)'} style={{ margin: '0 auto 16px auto' }} />
                                 <h3 style={{ fontSize: '1.25rem', color: role === 'local' ? 'var(--secondary)' : 'var(--text-dark)' }}>I'm a Local</h3>
