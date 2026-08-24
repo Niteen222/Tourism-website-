@@ -80,10 +80,35 @@ const Navbar = () => {
             <div style={{ width: '1px', height: '24px', backgroundColor: 'var(--text-light)', opacity: 0.2 }}></div>
 
             {user ? (
-              <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--primary)' }}>
-                  {t('navbar.hi')}, {user.name}
-                </span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                {/* Avatar: Google photo or initials */}
+                {user.avatar ? (
+                  <img
+                    src={user.avatar}
+                    alt={user.name}
+                    style={{
+                      width: '36px', height: '36px', borderRadius: '50%',
+                      objectFit: 'cover', border: '2px solid var(--primary)',
+                      flexShrink: 0
+                    }}
+                    onError={e => { e.currentTarget.style.display = 'none'; }}
+                  />
+                ) : (
+                  <div style={{
+                    width: '36px', height: '36px', borderRadius: '50%',
+                    backgroundColor: 'var(--primary)', color: 'white',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontWeight: 700, fontSize: '0.875rem', flexShrink: 0
+                  }}>
+                    {user.name?.charAt(0)?.toUpperCase() || 'U'}
+                  </div>
+                )}
+                <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.2 }}>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-light)' }}>{t('navbar.hi')}</span>
+                  <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--primary)', maxWidth: '120px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    {user.name?.split(' ')[0]}
+                  </span>
+                </div>
                 <button className="btn btn-outline" onClick={handleLogout} style={{ padding: '8px 16px' }}>
                   <LogOut size={16} /> {t('navbar.logout')}
                 </button>
@@ -133,7 +158,19 @@ const Navbar = () => {
 
         {user ? (
           <>
-            <span style={{ padding: '12px 0', fontWeight: 600, color: 'var(--primary)' }}>{t('navbar.hi')}, {user.name}</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '12px 0' }}>
+              {user.avatar ? (
+                <img src={user.avatar} alt={user.name} style={{ width: '40px', height: '40px', borderRadius: '50%', border: '2px solid var(--primary)', objectFit: 'cover' }} />
+              ) : (
+                <div style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'var(--primary)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700 }}>
+                  {user.name?.charAt(0)?.toUpperCase() || 'U'}
+                </div>
+              )}
+              <div>
+                <div style={{ fontWeight: 700, color: 'var(--primary)', fontSize: '0.95rem' }}>{user.name}</div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-light)' }}>{user.email}</div>
+              </div>
+            </div>
             <button onClick={handleLogout} style={{ color: 'var(--text-dark)', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <LogOut size={16} /> {t('navbar.logout')}
             </button>

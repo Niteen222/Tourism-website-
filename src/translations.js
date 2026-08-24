@@ -159,7 +159,7 @@ export const translations = {
                     price: "₹1,200/night",
                     rating: 4.2,
                     reviews: 45,
-                    image: "/Tourism-website-/dandak_homestay.png",
+                    image: "/dandak_homestay.png",
                     features: ["Tribal Experience", "Local Guidance", "Organic Food", "Village Tour"],
                     phone: "+91 7856796279",
                     mapLink: "https://www.google.com/maps/search/Dandak+Tribes+Homestay+Dantewada",
@@ -249,22 +249,71 @@ export const translations = {
                     id: 1,
                     name: "Chaprah (Red Ant Chutney)",
                     description: "A famous and unique Bastar delicacy made from red ants and their eggs, ground with spices. Known for its medicinal properties.",
-                    image: "https://images.unsplash.com/photo-1589302168068-964664d93cb0?auto=format&fit=crop&w=800&q=80",
+                    image: "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800",
                     origin: "Traditional Tribal Food"
                 },
                 {
                     id: 2,
                     name: "Bafauri",
                     description: "A healthy, steamed alternative to pakodas made from chana dal, onions, and spices. Very popular in Chhattisgarh.",
-                    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+                    image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=800",
                     origin: "Local Snack"
                 },
                 {
                     id: 3,
                     name: "Muthia",
                     description: "Steamed dumplings made from rice batter and local spices. Often served during breakfast with tangy tomato chutney.",
-                    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+                    image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800",
                     origin: "Breakfast Item"
+                },
+                {
+                    id: 4,
+                    name: "Aamat (Tribal Curry)",
+                    description: "A traditional Bastar curry made with bamboo shoots, local vegetables and spices cooked in a clay pot. A staple dish in every tribal household.",
+                    image: "https://images.pexels.com/photos/2741458/pexels-photo-2741458.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "Tribal Main Course"
+                },
+                {
+                    id: 5,
+                    name: "Sulphi (Palm Wine)",
+                    description: "A traditional natural drink extracted from the palm tree, widely consumed by the tribal communities of Bastar during festivals and gatherings.",
+                    image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "Traditional Tribal Drink"
+                },
+                {
+                    id: 6,
+                    name: "Farra",
+                    description: "Traditional Chhattisgarhi steamed rice dumplings stuffed with lentil paste or coconut and jaggery. A popular dish during festivals.",
+                    image: "https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "Festival Dish"
+                },
+                {
+                    id: 7,
+                    name: "Chousela (Rice Roti)",
+                    description: "Thin crispy flatbreads made from rice flour, cooked on a traditional iron griddle. Best eaten hot with tomato chutney or dal.",
+                    image: "https://images.pexels.com/photos/1430372/pexels-photo-1430372.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "Daily Staple"
+                },
+                {
+                    id: 8,
+                    name: "Mahua Laddoo",
+                    description: "Sweet round balls made from Mahua flowers — a sacred ingredient for tribal communities. Rich in natural sugars and served during special occasions.",
+                    image: "https://images.pexels.com/photos/1343504/pexels-photo-1343504.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "Traditional Sweet"
+                },
+                {
+                    id: 9,
+                    name: "Bamboo Shoot Pickle",
+                    description: "Tangy and spicy pickle made from fresh bamboo shoots sourced from the dense forests of Bastar. A popular condiment served with rice meals.",
+                    image: "https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "Forest Delicacy"
+                },
+                {
+                    id: 10,
+                    name: "Boiled Tamarind Chutney",
+                    description: "A signature Bastar condiment made from local tamarind, green chilies and tribal spices. This tangy chutney is a perfect accompaniment to any meal.",
+                    image: "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "Local Condiment"
                 }
             ]
         },
@@ -279,16 +328,14 @@ export const translations = {
                     name: "Dholkal Ganesha",
                     type: "Trek & Temple",
                     description: "An ancient Ganesha idol situated at a height of 3000 feet amidst lush green forests. It requires a 3km trek through dense jungle.",
-                    image: "https://i.pinimg.com/736x/43/d6/56/43d6566b1c7323ef08885f38180f70e0.jpg",
+                    image: "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2023/02/2017-06-20-1676371618.jpg",
                     distance: "18 km from Dantewada city",
                     duration: "4-5 hours (including trek)",
                     gallery: [
                         "https://images.unsplash.com/photo-1542224566-6e85f2e6772f?auto=format&fit=crop&w=800&q=80",
-                        "https://content.jdmagicbox.com/comp/dantewada/z2/9999p7856.7856.200929224824.w9z2/catalogue/dholkal-ganesh-temple-dantewada-temples-2TDc2mB3xM.jpg",
-                        "https://hindi.cdn.zeenews.com/hindi/sites/default/files/2022/11/03/1403203-ganeshnews1.jpg?im=FitAndFill=(1200,900)",
-                        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80",
-                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL5T9PJn11fDFO2I33vOqbvsRH2yVkP1UEfA&s",
-                        "https://satyaagrah.com/images/2022/Aug/ekdanta1SEp.jpg"
+                        "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80",
+                        "https://images.unsplash.com/photo-1518182170546-076616fd427d?auto=format&fit=crop&w=800&q=80",
+                        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80"
                     ]
                 },
                 {
@@ -311,7 +358,7 @@ export const translations = {
                     name: "Phoolpad Waterfall",
                     type: "Nature",
                     description: "Phoolpad Waterfall at Dantewada is one of the most alluring waterfalls of the region. Surrounded by thick forests, this waterfall also has amazing river trails and a short trek to the river bank.",
-                    image: "https://chhattisgarhpedia.com/upload/blog/exploring-the-majestic-beauty-of-fulpad-waterfall.webp",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvOhtcY5yAmeessK3M2865gSNkRNh_muP3DcVBOOMIFA&s=10",
                     distance: "35 km from Dantewada",
                     duration: "Half day trip",
                     gallery: [
@@ -340,11 +387,11 @@ export const translations = {
                     name: "Chitrakoot Waterfall",
                     type: "Nature / Waterfall",
                     description: "Known as the 'Niagara Falls of India', this majestic horseshoe-shaped waterfall on the Indravati river is a sight to behold, especially during monsoon.",
-                    image: "/Tourism-website-/places/chitrakote.png",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zEteLESSnXTBvsjLfEMTNX0CqMSg6RNEpPITQRR57roIjnfWd7mLtSY&s=10",
                     distance: "95 km from Dantewada",
                     duration: "Full day trip",
                     gallery: [
-                        "/Tourism-website-/places/chitrakote.png",
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zEteLESSnXTBvsjLfEMTNX0CqMSg6RNEpPITQRR57roIjnfWd7mLtSY&s=10",
                         "https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=800&q=80"
                     ]
                 },
@@ -353,11 +400,11 @@ export const translations = {
                     name: "Tirathgarh Waterfall",
                     type: "Nature / Waterfall",
                     description: "A spectacular multi-tiered waterfall where the Mungabahar river drops 300 feet in as many steps, creating a milky white appearance.",
-                    image: "/Tourism-website-/places/tirathgarh.png",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSewD-kLil6uRD8frpU1WMyEfJIYnGkWAPqeizGqngqxQ&s=10",
                     distance: "85 km from Dantewada",
                     duration: "Full day trip",
                     gallery: [
-                        "/Tourism-website-/places/tirathgarh.png",
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSewD-kLil6uRD8frpU1WMyEfJIYnGkWAPqeizGqngqxQ&s=10",
                         "https://images.unsplash.com/photo-1544198365-f5d60b6d8190?auto=format&fit=crop&w=800&q=80"
                     ]
                 },
@@ -366,11 +413,11 @@ export const translations = {
                     name: "Kotumsar Caves",
                     type: "Adventure / Heritage",
                     description: "One of the longest natural caves in the world, featuring stunning limestone formations of stalactites and stalagmites deep underground.",
-                    image: "/Tourism-website-/places/kotumsar.png",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmjeJxpp9szwKG2Xytnxh-p8Msz6kglsL9r_2nLXyWag&s=10",
                     distance: "90 km from Dantewada",
                     duration: "Full day trip",
                     gallery: [
-                        "/Tourism-website-/places/kotumsar.png",
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmjeJxpp9szwKG2Xytnxh-p8Msz6kglsL9r_2nLXyWag&s=10",
                         "https://images.unsplash.com/photo-1541417904950-b855846fe074?auto=format&fit=crop&w=800&q=80"
                     ]
                 },
@@ -379,11 +426,11 @@ export const translations = {
                     name: "Bailadila Hills",
                     type: "Nature / Scenic",
                     description: "Industrial hills famous for high-grade iron ore, offering breathtaking mountain views, lush forests, and winding roads.",
-                    image: "/Tourism-website-/places/bailadila.png",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaAUlkDg5UNTMRkIYgE2LP6X3s0SVkqIFphGBRFq8_-0jEU3V6vAiOcAM&s=10",
                     distance: "25 km from Dantewada",
                     duration: "4-5 hours",
                     gallery: [
-                        "/Tourism-website-/places/bailadila.png",
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaAUlkDg5UNTMRkIYgE2LP6X3s0SVkqIFphGBRFq8_-0jEU3V6vAiOcAM&s=10",
                         "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=80"
                     ]
                 }
@@ -560,7 +607,7 @@ export const translations = {
                     price: "₹1,200/रात",
                     rating: 4.2,
                     reviews: 45,
-                    image: "/Tourism-website-/dandak_homestay.png",
+                    image: "/dandak_homestay.png",
                     features: ["आदिवासी अनुभव", "स्थानीय मार्गदर्शन", "जैविक भोजन", "गांव का दौरा"],
                     phone: "+91 7856796279",
                     mapLink: "https://www.google.com/maps/search/Dandak+Tribes+Homestay+Dantewada",
@@ -650,22 +697,71 @@ export const translations = {
                     id: 1,
                     name: "चपड़ा (लाल चींटी की चटनी)",
                     description: "बस्तर का एक प्रसिद्ध और अनूठा व्यंजन जो लाल चींटियों और उनके अंडों से बनाया जाता है। अपने औषधीय गुणों के लिए जाना जाता है।",
-                    image: "https://images.unsplash.com/photo-1589302168068-964664d93cb0?auto=format&fit=crop&w=800&q=80",
+                    image: "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800",
                     origin: "पारंपरिक आदिवासी भोजन"
                 },
                 {
                     id: 2,
                     name: "बफौरी",
                     description: "चना दाल, प्याज और मसालों से बना पकोड़े का एक स्वास्थ्यवर्धक विकल्प। छत्तीसगढ़ में बहुत लोकप्रिय है।",
-                    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+                    image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=800",
                     origin: "स्थानीय नाश्ता"
                 },
                 {
                     id: 3,
                     name: "मुठिया",
                     description: "चावल के घोल और स्थानीय मसालों से बने उबले हुए पकौड़े। अक्सर नाश्ते में तीखी टमाटर की चटनी के साथ परोसे जाते हैं।",
-                    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+                    image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800",
                     origin: "नाश्ता"
+                },
+                {
+                    id: 4,
+                    name: "आमट (आदिवासी करी)",
+                    description: "बांस की कोपलों, स्थानीय सब्जियों और मसालों से मिट्टी के बर्तन में पकाई गई पारंपरिक बस्तर करी। हर आदिवासी परिवार का मुख्य व्यंजन।",
+                    image: "https://images.pexels.com/photos/2741458/pexels-photo-2741458.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "आदिवासी मुख्य व्यंजन"
+                },
+                {
+                    id: 5,
+                    name: "सल्फी (ताड़ी)",
+                    description: "ताड़ के पेड़ से निकाला गया एक पारंपरिक प्राकृतिक पेय, जिसे बस्तर के आदिवासी समुदाय त्योहारों और मेलों में पीते हैं।",
+                    image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "पारंपरिक आदिवासी पेय"
+                },
+                {
+                    id: 6,
+                    name: "फर्रा",
+                    description: "दाल के पेस्ट या नारियल और गुड़ से भरे पारंपरिक छत्तीसगढ़ी उबले चावल के पकौड़े। त्योहारों में बहुत लोकप्रिय व्यंजन।",
+                    image: "https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "त्योहारी व्यंजन"
+                },
+                {
+                    id: 7,
+                    name: "चौसेला (चावल की रोटी)",
+                    description: "चावल के आटे से बनी पतली कुरकुरी रोटियां, पारंपरिक लोहे की तवे पर बनाई जाती हैं। टमाटर की चटनी या दाल के साथ गर्म परोसी जाती हैं।",
+                    image: "https://images.pexels.com/photos/1430372/pexels-photo-1430372.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "दैनिक मुख्य भोजन"
+                },
+                {
+                    id: 8,
+                    name: "महुआ लड्डू",
+                    description: "महुआ के फूलों से बने मीठे गोल लड्डू — आदिवासी समुदायों के लिए एक पवित्र सामग्री। प्राकृतिक शर्करा से भरपूर और विशेष अवसरों पर परोसे जाते हैं।",
+                    image: "https://images.pexels.com/photos/1343504/pexels-photo-1343504.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "पारंपरिक मिठाई"
+                },
+                {
+                    id: 9,
+                    name: "बांस की कोपल का अचार",
+                    description: "बस्तर के घने जंगलों से लाई ताज़ी बांस की कोपलों से बना तीखा और चटपटा अचार। चावल के भोजन के साथ एक लोकप्रिय मसाला।",
+                    image: "https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "जंगल का विशेष व्यंजन"
+                },
+                {
+                    id: 10,
+                    name: "उबली इमली की चटनी",
+                    description: "स्थानीय इमली, हरी मिर्च और आदिवासी मसालों से बनी बस्तर की पहचान वाली चटनी। किसी भी भोजन के साथ एक आदर्श संगत।",
+                    image: "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    origin: "स्थानीय मसाला"
                 }
             ]
         },
@@ -710,7 +806,7 @@ export const translations = {
                     name: "फूलपाड़ जलप्रपात",
                     type: "प्रकृति",
                     description: "दंतेवाड़ा में फूलपाड़ जलप्रपात इस क्षेत्र के सबसे आकर्षक झरनों में से एक है। घने जंगलों से घिरा यह जलप्रपात सुंदर नदी ट्रेल्स भी प्रदान करता है।",
-                    image: "https://chhattisgarhpedia.com/upload/blog/exploring-the-majestic-beauty-of-fulpad-waterfall.webp",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvOhtcY5yAmeessK3M2865gSNkRNh_muP3DcVBOOMIFA&s=10",
                     distance: "दंतेवाड़ा से 35 किमी",
                     duration: "आधे दिन की यात्रा",
                     gallery: [
@@ -741,11 +837,11 @@ export const translations = {
                     name: "चित्रकोट जलप्रपात",
                     type: "प्रकृति / जलप्रपात",
                     description: "भारत के 'नियाग्रा फॉल्स' के रूप में जाना जाने वाला, इंद्रावती नदी पर बना यह राजसी घोड़ा-नाल आकार का जलप्रपात देखने लायक है, विशेष रूप से मानसून के दौरान।",
-                    image: "/Tourism-website-/places/chitrakote.png",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zEteLESSnXTBvsjLfEMTNX0CqMSg6RNEpPITQRR57roIjnfWd7mLtSY&s=10",
                     distance: "दंतेवाड़ा से 95 किमी",
                     duration: "पूरे दिन की यात्रा",
                     gallery: [
-                        "/Tourism-website-/places/chitrakote.png",
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zEteLESSnXTBvsjLfEMTNX0CqMSg6RNEpPITQRR57roIjnfWd7mLtSY&s=10",
                         "https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=800&q=80",
                         "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=800&q=80"
                     ]
@@ -755,11 +851,11 @@ export const translations = {
                     name: "तीरथगढ़ जलप्रपात",
                     type: "प्रकृति / जलप्रपात",
                     description: "एक शानदार बहु-स्तरीय जलप्रपात जहाँ मुनगाबहार नदी 300 फीट नीचे गिरती है, जिससे दूधिया सफेद दृश्य बनता है।",
-                    image: "/Tourism-website-/places/tirathgarh.png",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSewD-kLil6uRD8frpU1WMyEfJIYnGkWAPqeizGqngqxQ&s=10",
                     distance: "दंतेवाड़ा से 85 किमी",
                     duration: "पूरे दिन की यात्रा",
                     gallery: [
-                        "/Tourism-website-/places/tirathgarh.png",
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSewD-kLil6uRD8frpU1WMyEfJIYnGkWAPqeizGqngqxQ&s=10",
                         "https://images.unsplash.com/photo-1544198365-f5d60b6d8190?auto=format&fit=crop&w=800&q=80",
                         "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80"
                     ]
@@ -769,11 +865,11 @@ export const translations = {
                     name: "कोटमसर गुफाएं",
                     type: "साहसिक / विरासत",
                     description: "दुनिया की सबसे लंबी प्राकृतिक गुफाओं में से एक, जिसमें जमीन के नीचे चूना पत्थर की शानदार संरचनाएं हैं।",
-                    image: "/Tourism-website-/places/kotumsar.png",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmjeJxpp9szwKG2Xytnxh-p8Msz6kglsL9r_2nLXyWag&s=10",
                     distance: "दंतेवाड़ा से 90 किमी",
                     duration: "पूरे दिन की यात्रा",
                     gallery: [
-                        "/Tourism-website-/places/kotumsar.png",
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmjeJxpp9szwKG2Xytnxh-p8Msz6kglsL9r_2nLXyWag&s=10",
                         "https://images.unsplash.com/photo-1541417904950-b855846fe074?auto=format&fit=crop&w=800&q=80",
                         "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?auto=format&fit=crop&w=800&q=80"
                     ]
@@ -783,11 +879,11 @@ export const translations = {
                     name: "बैलाडिला पहाड़ियां",
                     type: "प्रकृति / दृश्य",
                     description: "उच्च श्रेणी के लौह अयस्क के लिए प्रसिद्ध औद्योगिक पहाड़ियाँ, जो पहाड़ों के लुभावने दृश्य, घने जंगल और घुमावदार सड़कें प्रदान करती हैं।",
-                    image: "/Tourism-website-/places/bailadila.png",
+                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaAUlkDg5UNTMRkIYgE2LP6X3s0SVkqIFphGBRFq8_-0jEU3V6vAiOcAM&s=10",
                     distance: "दंतेवाड़ा से 25 किमी",
                     duration: "4-5 घंटे",
                     gallery: [
-                        "/Tourism-website-/places/bailadila.png",
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaAUlkDg5UNTMRkIYgE2LP6X3s0SVkqIFphGBRFq8_-0jEU3V6vAiOcAM&s=10",
                         "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=80",
                         "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=800&q=80"
                     ]
